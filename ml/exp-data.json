@@ -1,0 +1,138 @@
+[
+  {
+    "tokens": ["Compré", "una", "hamburguesa", "por", "5.45"],
+    "labels": ["ACT", "NONE", "PROD", "NONE", "VAL"]
+  },
+  {
+    "tokens": ["Cogí", "un", "Cabify", "por", "1.70"],
+    "labels": ["ACT", "NONE", "PROD", "NONE", "VAL"]
+  },
+  {
+    "tokens": ["Cogí", "un", "Uber", "por", "1.70"],
+    "labels": ["ACT", "NONE", "PROD", "NONE", "VAL"]
+  },
+  {
+    "tokens": ["Compré", "una", "Salchipapa", "por", "1"],
+    "labels": ["ACT", "NONE", "PROD", "NONE", "VAL"]
+  },
+  {
+    "tokens": ["Cogí", "un", "Taxi", "por", "3"],
+    "labels": ["ACT", "NONE", "PROD", "NONE", "VAL"]
+  },
+  {
+    "tokens": ["Gasté", "2.32", "en", "el", "almuerzo"],
+    "labels": ["ACT", "VAL", "NONE", "NONE", "PROD"]
+  },
+  {
+    "tokens": ["Me", "regresé", "a", "casa", "por", "3", "en", "cabify"],
+    "labels": ["NONE", "ACT", "NONE", "WHERE", "NONE", "VAL", "NONE", "PROD"]
+  },
+  {
+    "tokens": ["Llegué", "en", "uber", "por", "3"],
+    "labels": ["ACT", "NONE", "PROD", "NONE", "VAL"]
+  },
+  {
+    "tokens": ["Hoy", "gasté", "2.32", "en", "el", "almuerzo"],
+    "labels": ["WHEN", "ACT", "VAL", "NONE", "NONE", "PROD"]
+  },
+  {
+    "tokens": ["Cogí", "un", "Indriver", "a", "casa", "por", "8.70"],
+    "labels": ["ACT", "NONE", "PROD", "NONE", "WHERE", "NONE", "VAL"]
+  },
+  {
+    "tokens": [
+      "Hoy",
+      "me",
+      "regresé",
+      "en",
+      "Indriver",
+      "a",
+      "casa",
+      "por",
+      "8.70"
+    ],
+    "labels": [
+      "WHEN",
+      "NONE",
+      "ACT",
+      "NONE",
+      "PROD",
+      "NONE",
+      "WHERE",
+      "NONE",
+      "VAL"
+    ]
+  },
+  {
+    "tokens": ["Salí", "a", "comer", "a", "carl's", "y", "gasté", "15"],
+    "labels": ["ACT", "NONE", "PROD", "NONE", "NONE", "NONE", "NONE", "VAL"]
+  },
+  {
+    "tokens": [
+      "Ayer",
+      "fui",
+      "a",
+      "comer",
+      "a",
+      "chilli's",
+      "y",
+      "gasté",
+      "45"
+    ],
+    "labels": [
+      "WHERE",
+      "ACT",
+      "NONE",
+      "PROD",
+      "NONE",
+      "WHERE",
+      "NONE",
+      "ACT",
+      "VAL"
+    ]
+  },
+  {
+    "tokens": ["Fui", "a", "comer", "gasté", "14"],
+    "labels": ["ACT", "NONE", "PROD", "NONE", "VAL"]
+  },
+  {
+    "tokens": ["Salí", "a", "tomar", "gasté", "18"],
+    "labels": ["ACT", "NONE", "PROD", "NONE", "VAL"]
+  },
+  {
+    "tokens": ["Salí", "al", "cine", "gasté", "20"],
+    "labels": ["ACT", "NONE", "PROD", "NONE", "VAL"]
+  },
+  {
+    "tokens": ["Salí", "a", "comer", "gasté", "15"],
+    "labels": ["ACT", "NONE", "PROD", "NONE", "VAL"]
+  },
+  {
+    "tokens": ["Salí", "a", "bailar", "y", "gasté", "15", "dolares"],
+    "labels": ["ACT", "NONE", "PROD", "NONE", "NONE", "VAL", "NONE"]
+  },
+  {
+    "tokens": [
+      "Pagué",
+      "la",
+      "gasolina",
+      "del",
+      "carro",
+      "de",
+      "tia",
+      "fueron",
+      "15"
+    ],
+    "labels": [
+      "ACT",
+      "NONE",
+      "PROD",
+      "NONE",
+      "NONE",
+      "NONE",
+      "NONE",
+      "NONE",
+      "VAL"
+    ]
+  }
+]

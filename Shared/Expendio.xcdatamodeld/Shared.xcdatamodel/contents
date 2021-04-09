@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="true" userDefinedModelVersionIdentifier="">
-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Budget" representedClassName="Budget" syncable="YES" codeGenerationType="class">
+        <attribute name="cap" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="forLabel" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="EItemLabel" inverseName="budget" inverseEntity="EItemLabel"/>
+    </entity>
+    <entity name="EAccount" representedClassName="EAccount" syncable="YES" codeGenerationType="class">
+        <attribute name="initialBalance" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="transactions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ETransaction" inverseName="account" inverseEntity="ETransaction"/>
+    </entity>
+    <entity name="EItemLabel" representedClassName="EItemLabel" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String" defaultValueString="" spotlightIndexingEnabled="YES"/>
+        <attribute name="value" attributeType="String" defaultValueString=""/>
+        <relationship name="budget" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Budget" inverseName="forLabel" inverseEntity="Budget"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ETransaction" inverseName="labels" inverseEntity="ETransaction"/>
+    </entity>
+    <entity name="ETransaction" representedClassName="ETransaction" syncable="YES" codeGenerationType="category">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO" spotlightIndexingEnabled="YES"/>
+        <relationship name="account" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="EAccount" inverseName="transactions" inverseEntity="EAccount"/>
+        <relationship name="labels" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="EItemLabel" inverseName="items" inverseEntity="EItemLabel"/>
     </entity>
     <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
+        <element name="Budget" positionX="-45" positionY="36" width="128" height="59"/>
+        <element name="EAccount" positionX="-54" positionY="18" width="128" height="74"/>
+        <element name="EItemLabel" positionX="-63" positionY="-9" width="128" height="89"/>
+        <element name="ETransaction" positionX="-63" positionY="-18" width="128" height="89"/>
     </elements>
 </model>

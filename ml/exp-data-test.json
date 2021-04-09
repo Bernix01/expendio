@@ -1,0 +1,61 @@
+[
+  {
+    "tokens": [
+      "Salí",
+      "por",
+      "una",
+      "hamburguesa",
+      "que",
+      "me",
+      "costó",
+      "5.45"
+    ],
+    "labels": ["ACT", "NONE", "NONE", "PROD", "NONE", "NONE", "NONE", "VAL"]
+  },
+  {
+    "tokens": ["Gasté", "por", "una", "hamburguesa", "5.45"],
+    "labels": ["ACT", "NONE", "NONE", "PROD", "VAL"]
+  },
+  {
+    "tokens": ["Gasté", "2.36", "en", "un", "uber", "a", "mi", "casa"],
+    "labels": ["ACT", "VAL", "NONE", "NONE", "PROD", "NONE", "NONE", "WHERE"]
+  },
+  {
+    "tokens": ["Gasté", "por", "una", "hamburguesa", "el", "valor", "de", "4"],
+    "labels": ["ACT", "NONE", "NONE", "PROD", "NONE", "NONE", "NONE", "VAL"]
+  },
+  {
+    "tokens": ["Salí", "por", "una", "salchipapa", "que", "me", "costó", "12"],
+    "labels": ["ACT", "NONE", "NONE", "PROD", "NONE", "NONE", "NONE", "VAL"]
+  },
+  {
+    "tokens": [
+      "Ayer",
+      "salí",
+      "por",
+      "una",
+      "salchipapa",
+      "en",
+      "la",
+      "esquina",
+      "que",
+      "me",
+      "costó",
+      "5.45"
+    ],
+    "labels": [
+      "WHEN",
+      "ACT",
+      "NONE",
+      "NONE",
+      "PROD",
+      "NONE",
+      "NONE",
+      "NONE",
+      "WHERE",
+      "NONE",
+      "NONE",
+      "VAL"
+    ]
+  }
+]

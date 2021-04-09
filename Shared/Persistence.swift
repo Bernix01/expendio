@@ -13,9 +13,21 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
+        
+//        clearAll(coordinator: result.container.persistentStoreCoordinator, viewContext: viewContext)
+        
+        let fooAccount = EAccount(context: viewContext)
+        fooAccount.name = "ExpendioBank"
+        fooAccount.initialBalance = 20.0
         for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
+            let newItem = ETransaction(context: viewContext)
             newItem.timestamp = Date()
+            newItem.amount = Double.random(in: -20.0...20.0)
+            let descriptionLbl = EItemLabel(context: viewContext)
+            descriptionLbl.name = "description"
+            descriptionLbl.value = "Transaction"
+            newItem.labels = [descriptionLbl]
+            newItem.account = fooAccount
         }
         do {
             try viewContext.save()
@@ -51,5 +63,28 @@ struct PersistenceController {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
+    }
+}
+
+
+func  clearAll(coordinator: NSPersistentStoreCoordinator ,viewContext: NSManagedObjectContext) -> Void {
+    
+    
+    do {
+        let fetchRequest3: NSFetchRequest<NSFetchRequestResult> = ETransaction.fetchRequest()
+        let deleteRequest3 = NSBatchDeleteRequest(fetchRequest: fetchRequest3)
+        print("aaa")
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = EItemLabel.fetchRequest()
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+        print("aaa")
+        let fetchRequest2: NSFetchRequest<NSFetchRequestResult> = EAccount.fetchRequest()
+        let deleteRequest2 = NSBatchDeleteRequest(fetchRequest: fetchRequest2)
+        print("aaa")
+        try coordinator.execute(deleteRequest, with: viewContext)
+        try coordinator.execute(deleteRequest3, with: viewContext)
+        try coordinator.execute(deleteRequest2, with: viewContext)
+        try viewContext.save()
+    } catch let error as NSError {
+        print(error)
     }
 }

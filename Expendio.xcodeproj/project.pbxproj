@@ -19,6 +19,16 @@
 		5031A78F2618BAC9002740ED /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5031A7602618BAC8002740ED /* Persistence.swift */; };
 		5031A7902618BAC9002740ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5031A7612618BAC8002740ED /* Assets.xcassets */; };
 		5031A7912618BAC9002740ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5031A7612618BAC8002740ED /* Assets.xcassets */; };
+		5031A7A72618BB13002740ED /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5031A7A62618BB13002740ED /* CloudKit.framework */; };
+		507DA07D261911E2000557B8 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 507DA07C261911E2000557B8 /* CloudKit.framework */; };
+		50D9BC00261A56F800720520 /* ETransaction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9BBFE261A56F800720520 /* ETransaction+CoreDataClass.swift */; };
+		50D9BC01261A56F800720520 /* ETransaction+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D9BBFE261A56F800720520 /* ETransaction+CoreDataClass.swift */; };
+		50FA538C2619FF60005C21A8 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA538B2619FF60005C21A8 /* Sidebar.swift */; };
+		50FA5392261A0023005C21A8 /* SidebarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA5391261A0023005C21A8 /* SidebarItem.swift */; };
+		50FA539B261A111C005C21A8 /* Sidebar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA538B2619FF60005C21A8 /* Sidebar.swift */; };
+		50FA53A0261A1120005C21A8 /* SidebarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA5391261A0023005C21A8 /* SidebarItem.swift */; };
+		50FA53A6261A198C005C21A8 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA53A5261A198C005C21A8 /* TransactionsView.swift */; };
+		50FA53A7261A198C005C21A8 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA53A5261A198C005C21A8 /* TransactionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +65,13 @@
 		5031A7812618BAC9002740ED /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5031A7852618BAC9002740ED /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		5031A7872618BAC9002740ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5031A7A42618BB0B002740ED /* Expendio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Expendio.entitlements; sourceTree = "<group>"; };
+		5031A7A62618BB13002740ED /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		507DA07C261911E2000557B8 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		50D9BBFE261A56F800720520 /* ETransaction+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ETransaction+CoreDataClass.swift"; sourceTree = "<group>"; };
+		50FA538B2619FF60005C21A8 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
+		50FA5391261A0023005C21A8 /* SidebarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarItem.swift; sourceTree = "<group>"; };
+		50FA53A5261A198C005C21A8 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5031A7A72618BB13002740ED /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				507DA07D261911E2000557B8 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,23 +111,28 @@
 		5031A7562618BAC8002740ED = {
 			isa = PBXGroup;
 			children = (
+				5031A7A42618BB0B002740ED /* Expendio.entitlements */,
 				5031A75B2618BAC8002740ED /* Shared */,
 				5031A7682618BAC9002740ED /* iOS */,
 				5031A76F2618BAC9002740ED /* macOS */,
 				5031A7792618BAC9002740ED /* Tests iOS */,
 				5031A7842618BAC9002740ED /* Tests macOS */,
 				5031A7672618BAC9002740ED /* Products */,
+				5031A7A52618BB13002740ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		5031A75B2618BAC8002740ED /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				50D9BC08261A56FE00720520 /* Data */,
+				50FA538A2619FF2F005C21A8 /* Components */,
 				5031A75E2618BAC8002740ED /* ExpendioApp.swift */,
 				5031A75F2618BAC8002740ED /* ContentView.swift */,
 				5031A7602618BAC8002740ED /* Persistence.swift */,
 				5031A7612618BAC8002740ED /* Assets.xcassets */,
 				5031A75C2618BAC8002740ED /* Expendio.xcdatamodeld */,
+				50FA53A5261A198C005C21A8 /* TransactionsView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -157,6 +181,32 @@
 				5031A7872618BAC9002740ED /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		5031A7A52618BB13002740ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				507DA07C261911E2000557B8 /* CloudKit.framework */,
+				5031A7A62618BB13002740ED /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50D9BC08261A56FE00720520 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				50D9BBFE261A56F800720520 /* ETransaction+CoreDataClass.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		50FA538A2619FF2F005C21A8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				50FA538B2619FF60005C21A8 /* Sidebar.swift */,
+				50FA5391261A0023005C21A8 /* SidebarItem.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,10 +366,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50FA538C2619FF60005C21A8 /* Sidebar.swift in Sources */,
 				5031A7882618BAC9002740ED /* Expendio.xcdatamodeld in Sources */,
 				5031A78E2618BAC9002740ED /* Persistence.swift in Sources */,
+				50FA5392261A0023005C21A8 /* SidebarItem.swift in Sources */,
+				50D9BC00261A56F800720520 /* ETransaction+CoreDataClass.swift in Sources */,
 				5031A78A2618BAC9002740ED /* ExpendioApp.swift in Sources */,
 				5031A78C2618BAC9002740ED /* ContentView.swift in Sources */,
+				50FA53A6261A198C005C21A8 /* TransactionsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,10 +381,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50FA539B261A111C005C21A8 /* Sidebar.swift in Sources */,
 				5031A7892618BAC9002740ED /* Expendio.xcdatamodeld in Sources */,
 				5031A78F2618BAC9002740ED /* Persistence.swift in Sources */,
+				50FA53A0261A1120005C21A8 /* SidebarItem.swift in Sources */,
+				50D9BC01261A56F800720520 /* ETransaction+CoreDataClass.swift in Sources */,
 				5031A78B2618BAC9002740ED /* ExpendioApp.swift in Sources */,
 				5031A78D2618BAC9002740ED /* ContentView.swift in Sources */,
+				50FA53A7261A198C005C21A8 /* TransactionsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +540,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Expendio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54ERY2PPTQ;
 				ENABLE_PREVIEWS = YES;
@@ -504,6 +563,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Expendio.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54ERY2PPTQ;
 				ENABLE_PREVIEWS = YES;

@@ -13,9 +13,6 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        
-//        clearAll(coordinator: result.container.persistentStoreCoordinator, viewContext: viewContext)
-        
         let fooAccount = EAccount(context: viewContext)
         fooAccount.name = "ExpendioBank"
         fooAccount.initialBalance = 20.0
@@ -47,6 +44,11 @@ struct PersistenceController {
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
+        
+        guard  let description = container.persistentStoreDescriptions.first else {
+            fatalError("No Descriptions found")
+        }
+        description.setOption(true as NSObject, forKey: NSPersistentStoreRemoteChangeNotificationPostOptionKey)
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
@@ -63,12 +65,15 @@ struct PersistenceController {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
+        container.viewContext.automaticallyMergesChangesFromParent = true
+        container.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+        
     }
+    
 }
 
 
 func  clearAll(coordinator: NSPersistentStoreCoordinator ,viewContext: NSManagedObjectContext) -> Void {
-    
     
     do {
         let fetchRequest3: NSFetchRequest<NSFetchRequestResult> = ETransaction.fetchRequest()
@@ -85,6 +90,6 @@ func  clearAll(coordinator: NSPersistentStoreCoordinator ,viewContext: NSManaged
         try coordinator.execute(deleteRequest2, with: viewContext)
         try viewContext.save()
     } catch let error as NSError {
-        print(error)
+        fatalError("Unresolved error \(error), \(error.userInfo)")
     }
 }

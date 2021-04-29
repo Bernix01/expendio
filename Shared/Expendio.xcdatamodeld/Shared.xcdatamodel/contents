@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="18154" systemVersion="20E232" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
     <entity name="Budget" representedClassName="Budget" syncable="YES" codeGenerationType="class">
         <attribute name="cap" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <relationship name="forLabel" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="EItemLabel" inverseName="budget" inverseEntity="EItemLabel"/>
@@ -11,7 +11,7 @@
     </entity>
     <entity name="EItemLabel" representedClassName="EItemLabel" syncable="YES" codeGenerationType="class">
         <attribute name="name" attributeType="String" defaultValueString="" spotlightIndexingEnabled="YES"/>
-        <attribute name="value" attributeType="String" defaultValueString=""/>
+        <attribute name="value" attributeType="String" defaultValueString="" spotlightIndexingEnabled="YES"/>
         <relationship name="budget" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Budget" inverseName="forLabel" inverseEntity="Budget"/>
         <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ETransaction" inverseName="labels" inverseEntity="ETransaction"/>
     </entity>

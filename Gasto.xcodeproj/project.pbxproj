@@ -29,6 +29,14 @@
 		50FA53A0261A1120005C21A8 /* SidebarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA5391261A0023005C21A8 /* SidebarItem.swift */; };
 		50FA53A6261A198C005C21A8 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA53A5261A198C005C21A8 /* TransactionsView.swift */; };
 		50FA53A7261A198C005C21A8 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA53A5261A198C005C21A8 /* TransactionsView.swift */; };
+		B3339D60262FC51C00D47857 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3339D5F262FC51C00D47857 /* DashboardView.swift */; };
+		B3339D61262FC51C00D47857 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3339D5F262FC51C00D47857 /* DashboardView.swift */; };
+		B3339D6B262FC56200D47857 /* AccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3339D6A262FC56200D47857 /* AccountsView.swift */; };
+		B3339D6C262FC56200D47857 /* AccountsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3339D6A262FC56200D47857 /* AccountsView.swift */; };
+		B38D95BA2628652000C57AC3 /* TransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D95B92628652000C57AC3 /* TransactionDetailView.swift */; };
+		B38D95BB2628652000C57AC3 /* TransactionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38D95B92628652000C57AC3 /* TransactionDetailView.swift */; };
+		B3E5B26E263A5E3600428C78 /* TransactionEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E5B26D263A5E3600428C78 /* TransactionEditView.swift */; };
+		B3E5B26F263A5E3600428C78 /* TransactionEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E5B26D263A5E3600428C78 /* TransactionEditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,9 +62,9 @@
 		5031A75F2618BAC8002740ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5031A7602618BAC8002740ED /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		5031A7612618BAC8002740ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5031A7662618BAC9002740ED /* Expendio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expendio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5031A7662618BAC9002740ED /* Gasto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gasto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5031A7692618BAC9002740ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5031A76E2618BAC9002740ED /* Expendio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expendio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5031A76E2618BAC9002740ED /* Gasto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gasto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5031A7702618BAC9002740ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5031A7712618BAC9002740ED /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		5031A7762618BAC9002740ED /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,13 +73,17 @@
 		5031A7812618BAC9002740ED /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5031A7852618BAC9002740ED /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		5031A7872618BAC9002740ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5031A7A42618BB0B002740ED /* Expendio.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Expendio.entitlements; sourceTree = "<group>"; };
+		5031A7A42618BB0B002740ED /* Gasto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gasto.entitlements; sourceTree = "<group>"; };
 		5031A7A62618BB13002740ED /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		507DA07C261911E2000557B8 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		50D9BBFE261A56F800720520 /* ETransaction+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ETransaction+CoreDataClass.swift"; sourceTree = "<group>"; };
 		50FA538B2619FF60005C21A8 /* Sidebar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sidebar.swift; sourceTree = "<group>"; };
 		50FA5391261A0023005C21A8 /* SidebarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarItem.swift; sourceTree = "<group>"; };
 		50FA53A5261A198C005C21A8 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
+		B3339D5F262FC51C00D47857 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		B3339D6A262FC56200D47857 /* AccountsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsView.swift; sourceTree = "<group>"; };
+		B38D95B92628652000C57AC3 /* TransactionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailView.swift; sourceTree = "<group>"; };
+		B3E5B26D263A5E3600428C78 /* TransactionEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +123,7 @@
 		5031A7562618BAC8002740ED = {
 			isa = PBXGroup;
 			children = (
-				5031A7A42618BB0B002740ED /* Expendio.entitlements */,
+				5031A7A42618BB0B002740ED /* Gasto.entitlements */,
 				5031A75B2618BAC8002740ED /* Shared */,
 				5031A7682618BAC9002740ED /* iOS */,
 				5031A76F2618BAC9002740ED /* macOS */,
@@ -133,6 +145,10 @@
 				5031A7612618BAC8002740ED /* Assets.xcassets */,
 				5031A75C2618BAC8002740ED /* Expendio.xcdatamodeld */,
 				50FA53A5261A198C005C21A8 /* TransactionsView.swift */,
+				B38D95B92628652000C57AC3 /* TransactionDetailView.swift */,
+				B3E5B26D263A5E3600428C78 /* TransactionEditView.swift */,
+				B3339D5F262FC51C00D47857 /* DashboardView.swift */,
+				B3339D6A262FC56200D47857 /* AccountsView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -140,8 +156,8 @@
 		5031A7672618BAC9002740ED /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5031A7662618BAC9002740ED /* Expendio.app */,
-				5031A76E2618BAC9002740ED /* Expendio.app */,
+				5031A7662618BAC9002740ED /* Gasto.app */,
+				5031A76E2618BAC9002740ED /* Gasto.app */,
 				5031A7762618BAC9002740ED /* Tests iOS.xctest */,
 				5031A7812618BAC9002740ED /* Tests macOS.xctest */,
 			);
@@ -212,9 +228,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5031A7652618BAC9002740ED /* Expendio (iOS) */ = {
+		5031A7652618BAC9002740ED /* Gasto (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5031A7942618BAC9002740ED /* Build configuration list for PBXNativeTarget "Expendio (iOS)" */;
+			buildConfigurationList = 5031A7942618BAC9002740ED /* Build configuration list for PBXNativeTarget "Gasto (iOS)" */;
 			buildPhases = (
 				5031A7622618BAC9002740ED /* Sources */,
 				5031A7632618BAC9002740ED /* Frameworks */,
@@ -224,14 +240,14 @@
 			);
 			dependencies = (
 			);
-			name = "Expendio (iOS)";
+			name = "Gasto (iOS)";
 			productName = "Expendio (iOS)";
-			productReference = 5031A7662618BAC9002740ED /* Expendio.app */;
+			productReference = 5031A7662618BAC9002740ED /* Gasto.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5031A76D2618BAC9002740ED /* Expendio (macOS) */ = {
+		5031A76D2618BAC9002740ED /* Gasto (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5031A7972618BAC9002740ED /* Build configuration list for PBXNativeTarget "Expendio (macOS)" */;
+			buildConfigurationList = 5031A7972618BAC9002740ED /* Build configuration list for PBXNativeTarget "Gasto (macOS)" */;
 			buildPhases = (
 				5031A76A2618BAC9002740ED /* Sources */,
 				5031A76B2618BAC9002740ED /* Frameworks */,
@@ -241,9 +257,9 @@
 			);
 			dependencies = (
 			);
-			name = "Expendio (macOS)";
+			name = "Gasto (macOS)";
 			productName = "Expendio (macOS)";
-			productReference = 5031A76E2618BAC9002740ED /* Expendio.app */;
+			productReference = 5031A76E2618BAC9002740ED /* Gasto.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5031A7752618BAC9002740ED /* Tests iOS */ = {
@@ -289,7 +305,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					5031A7652618BAC9002740ED = {
 						CreatedOnToolsVersion = 12.4;
@@ -307,7 +323,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5031A75A2618BAC8002740ED /* Build configuration list for PBXProject "Expendio" */;
+			buildConfigurationList = 5031A75A2618BAC8002740ED /* Build configuration list for PBXProject "Gasto" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -320,8 +336,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5031A7652618BAC9002740ED /* Expendio (iOS) */,
-				5031A76D2618BAC9002740ED /* Expendio (macOS) */,
+				5031A7652618BAC9002740ED /* Gasto (iOS) */,
+				5031A76D2618BAC9002740ED /* Gasto (macOS) */,
 				5031A7752618BAC9002740ED /* Tests iOS */,
 				5031A7802618BAC9002740ED /* Tests macOS */,
 			);
@@ -368,12 +384,16 @@
 			files = (
 				50FA538C2619FF60005C21A8 /* Sidebar.swift in Sources */,
 				5031A7882618BAC9002740ED /* Expendio.xcdatamodeld in Sources */,
+				B3339D60262FC51C00D47857 /* DashboardView.swift in Sources */,
 				5031A78E2618BAC9002740ED /* Persistence.swift in Sources */,
+				B38D95BA2628652000C57AC3 /* TransactionDetailView.swift in Sources */,
 				50FA5392261A0023005C21A8 /* SidebarItem.swift in Sources */,
 				50D9BC00261A56F800720520 /* ETransaction+CoreDataClass.swift in Sources */,
+				B3339D6B262FC56200D47857 /* AccountsView.swift in Sources */,
 				5031A78A2618BAC9002740ED /* ExpendioApp.swift in Sources */,
 				5031A78C2618BAC9002740ED /* ContentView.swift in Sources */,
 				50FA53A6261A198C005C21A8 /* TransactionsView.swift in Sources */,
+				B3E5B26E263A5E3600428C78 /* TransactionEditView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,12 +403,16 @@
 			files = (
 				50FA539B261A111C005C21A8 /* Sidebar.swift in Sources */,
 				5031A7892618BAC9002740ED /* Expendio.xcdatamodeld in Sources */,
+				B3339D61262FC51C00D47857 /* DashboardView.swift in Sources */,
 				5031A78F2618BAC9002740ED /* Persistence.swift in Sources */,
+				B38D95BB2628652000C57AC3 /* TransactionDetailView.swift in Sources */,
 				50FA53A0261A1120005C21A8 /* SidebarItem.swift in Sources */,
 				50D9BC01261A56F800720520 /* ETransaction+CoreDataClass.swift in Sources */,
+				B3339D6C262FC56200D47857 /* AccountsView.swift in Sources */,
 				5031A78B2618BAC9002740ED /* ExpendioApp.swift in Sources */,
 				5031A78D2618BAC9002740ED /* ContentView.swift in Sources */,
 				50FA53A7261A198C005C21A8 /* TransactionsView.swift in Sources */,
+				B3E5B26F263A5E3600428C78 /* TransactionEditView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,12 +437,12 @@
 /* Begin PBXTargetDependency section */
 		5031A7782618BAC9002740ED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5031A7652618BAC9002740ED /* Expendio (iOS) */;
+			target = 5031A7652618BAC9002740ED /* Gasto (iOS) */;
 			targetProxy = 5031A7772618BAC9002740ED /* PBXContainerItemProxy */;
 		};
 		5031A7832618BAC9002740ED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5031A76D2618BAC9002740ED /* Expendio (macOS) */;
+			target = 5031A76D2618BAC9002740ED /* Gasto (macOS) */;
 			targetProxy = 5031A7822618BAC9002740ED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -540,7 +564,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Expendio.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Gasto.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54ERY2PPTQ;
 				ENABLE_PREVIEWS = YES;
@@ -550,8 +575,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ec.guillermo.Expendio;
-				PRODUCT_NAME = Expendio;
+				PRODUCT_BUNDLE_IDENTIFIER = ec.guillermo.gasto;
+				PRODUCT_NAME = Gasto;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -563,7 +589,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Expendio.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Gasto.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 54ERY2PPTQ;
 				ENABLE_PREVIEWS = YES;
@@ -573,8 +600,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ec.guillermo.Expendio;
-				PRODUCT_NAME = Expendio;
+				PRODUCT_BUNDLE_IDENTIFIER = ec.guillermo.gasto;
+				PRODUCT_NAME = Gasto;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -588,6 +616,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 54ERY2PPTQ;
@@ -599,8 +628,8 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ec.guillermo.Expendio;
-				PRODUCT_NAME = Expendio;
+				PRODUCT_BUNDLE_IDENTIFIER = ec.guillermo.gasto;
+				PRODUCT_NAME = Gasto;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -612,6 +641,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 54ERY2PPTQ;
@@ -623,8 +653,8 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ec.guillermo.Expendio;
-				PRODUCT_NAME = Expendio;
+				PRODUCT_BUNDLE_IDENTIFIER = ec.guillermo.gasto;
+				PRODUCT_NAME = Gasto;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 5.0;
 			};
@@ -722,7 +752,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5031A75A2618BAC8002740ED /* Build configuration list for PBXProject "Expendio" */ = {
+		5031A75A2618BAC8002740ED /* Build configuration list for PBXProject "Gasto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5031A7922618BAC9002740ED /* Debug */,
@@ -731,7 +761,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5031A7942618BAC9002740ED /* Build configuration list for PBXNativeTarget "Expendio (iOS)" */ = {
+		5031A7942618BAC9002740ED /* Build configuration list for PBXNativeTarget "Gasto (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5031A7952618BAC9002740ED /* Debug */,
@@ -740,7 +770,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5031A7972618BAC9002740ED /* Build configuration list for PBXNativeTarget "Expendio (macOS)" */ = {
+		5031A7972618BAC9002740ED /* Build configuration list for PBXNativeTarget "Gasto (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5031A7982618BAC9002740ED /* Debug */,
